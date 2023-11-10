@@ -1,0 +1,45 @@
+# Competators
+- Einstein Bro's Begal
+- Panera
+
+Lets discuss each one of them in detail
+
+
+# Einstein Bro's Begal
+
+## Brand Archetype
+CareGiver, Everyman
+
+## Methods of Persuasion
+
+### Reciprocity
+The site offers a free $5 bonus card with a $25 gift card purchase. This strategy plays on the reciprocity principle, where customers receive something of value and may feel the urge to reciprocate by making a purchase or becoming more loyal to the brand.
+
+### Authority
+The website notes that Einstein Bros. Bagels is part of Panera Bread, one of the nation's largest fast-casual restaurant companies. This association with a larger, well-known brand leverages authority and trust.
+
+### Liking
+The website uses appealing images of their menu items to create a sense of liking and craving for the products, which is a strong motivator for purchase decisions.
+
+### Scarcity
+The limited-time offers, such as the bonus card valid only until a certain date, utilize the scarcity principle, which can create a sense of urgency and prompt customers to act quickly to take advantage of the offers.
+
+### Unity
+The brand presents itself as a neighborhood gathering place, which might foster a sense of community or unity among customers who value local, communal dining experiences.
+
+## Scope for Improvement
+
+### Social Proof
+Adding customer testimonials, ratings, or reviews next to menu items could enhance credibility and encourage purchases.
+
+### Reciprocity
+While the site offers a $5 bonus card, it could further capitalize on the reciprocity principle by offering something immediate and without a purchase necessary, like a free bagel or drink upon signing up for the rewards program.
+
+### Scarcity
+The limited-time offers could be emphasized with a countdown timer or a more prominent display of the deadline to create a stronger sense of urgency.
+
+### Consistency
+To further encourage consistent engagement, they could introduce a "streak" feature where customers get additional rewards for consecutive purchases or visits, which would reinforce consistent behavior and deepen customer loyalty.
+
+### Liking
+By incorporating storytelling elements about the food, such as the origin of ingredients or the inspiration behind a sandwich, customers may develop a deeper appreciation and liking for the products.
