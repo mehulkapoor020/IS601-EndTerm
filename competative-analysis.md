@@ -59,9 +59,9 @@ promisses of becoming climate positive by year 2050.
 
 ### Reciprocity
 Reciprocity  
-0 delivery fee.  
-free treat/bagel for becoming a member.  
-Offering gift cards with benifits.  
+0 delivery fee to encourage cutomers to order food.
+Offering a free treat/bagel for becoming a member.  
+Offering gift cards and reward points for benifits like free items and .  
 
 ### Consistency
 consistently providing customers with healthy food options and warm experience.
