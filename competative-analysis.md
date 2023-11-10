@@ -58,10 +58,10 @@ promisses of becoming climate positive by year 2050.
 ## Methods of Persuasion
 
 ### Reciprocity
-Reciprocity
-0 delivery fee.
-free treat/bagel for becoming a member.
-Offering gift cards with benifits.
+Reciprocity  
+0 delivery fee.  
+free treat/bagel for becoming a member.  
+Offering gift cards with benifits.  
 
 ### Consistency
 consistently providing customers with healthy food options and warm experience.
@@ -70,13 +70,13 @@ consistently providing customers with healthy food options and warm experience.
 ## Scope for Improvement
 
 ### Social Proof
-Adding customer testimonials, ratings, or reviews would give assurance to the customer.
+Adding customer testimonials, ratings, or reviews would give assurance to the customer.  
 
 ### Scarcity
-Seasonal Items and limited time period offers can be introduced to create sense of urgency.
+Seasonal Items and limited time period offers can be introduced to create sense of urgency.  
 
 ### Authority
 
-Reviews from credible chefs and food critics and awards could encourage customers to eat there
+Reviews from credible chefs and food critics and awards could encourage customers to eat there  
 
 
