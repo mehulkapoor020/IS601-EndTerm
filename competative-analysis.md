@@ -48,12 +48,12 @@ By incorporating storytelling elements about the food, such as the origin of ing
 # 2. Panera Bread
 
 ## Brand Archetype
-CareGiver:
-First National restuarant chain to post calorie information on the menu.
-Promotes healthy and clean food.
-Warm Green color gives feeling of comfort and and seems to be healthy.
-Helps community to ensure their well being and health.
-promisses of becoming climate positive by year 2050.
+CareGiver:  
+First National restuarant chain to post calorie information on the menu.  
+Promotes healthy and clean food.  
+Warm Green color gives feeling of comfort and and seems to be healthy.  
+Helps community to ensure their well being and health.  
+promisses of becoming climate positive by year 2050.  
 
 ## Methods of Persuasion
 
