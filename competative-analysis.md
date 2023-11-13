@@ -5,7 +5,7 @@
 Lets discuss each one of them in detail
 
 
-# Einstein Bro's Begal
+# 1. Einstein Bro's Begal
 
 ## Brand Archetype
 CareGiver, Everyman
@@ -43,3 +43,39 @@ To further encourage consistent engagement, they could introduce a "streak" feat
 
 ### Liking
 By incorporating storytelling elements about the food, such as the origin of ingredients or the inspiration behind a sandwich, customers may develop a deeper appreciation and liking for the products.
+
+
+# 2. Panera Bread
+
+## Brand Archetype
+CareGiver:  
+First National restuarant chain to post calorie information on the menu.  
+Promotes healthy and clean food.  
+Warm Green color gives feeling of comfort and and seems to be healthy.  
+Helps community to ensure their well being and health.  
+promisses of becoming climate positive by year 2050.  
+
+## Methods of Persuasion
+
+### Reciprocity
+0 delivery fee to encourage cutomers to order food.  
+Offering a free treat/bagel for becoming a member.    
+Offering gift cards and reward points for benifits like free items and .    
+
+### Consistency
+consistently providing customers with healthy food options and warm experience.
+
+
+## Scope for Improvement
+
+### Social Proof
+Adding customer testimonials, ratings, or reviews would give assurance to the customer.  
+
+### Scarcity
+Seasonal Items and limited time period offers can be introduced to create sense of urgency.  
+
+### Authority
+
+Reviews from credible chefs and food critics and awards could encourage customers to eat there  
+
+
