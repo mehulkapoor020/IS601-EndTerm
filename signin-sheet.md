@@ -9,12 +9,12 @@
  <tr>
     <td>Nov 7, 2023</td>
     <td>X</td>
-    <td>X</td>
+    <td></td>
  </tr>
  <tr>
     <td>Nov 9, 2023</td>
     <td>X</td>
-    <td>X</td>
+    <td></td>
  </tr>
  <tr>
     <td>Nov 14, 2023</td>
@@ -40,4 +40,8 @@
  <tr>
     <td>Dec 12, 2023</td>
  </tr>
+ <tr>
+    <td>Dec 13, 2023</td>
+ </tr>
 </table>
+Instructions: Please place an 'X' in the cell under your name corresponding to the dates you attend class.
