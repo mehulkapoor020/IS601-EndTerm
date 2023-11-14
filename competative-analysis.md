@@ -79,7 +79,7 @@ Seasonal Items and limited time period offers can be introduced to create sense 
 Reviews from credible chefs and food critics and awards could encourage customers to eat there  
 
 
-# 2. Laduree Paris
+# 3. Laduree Paris
 
 ## Brand Archetype
 Lover:  
