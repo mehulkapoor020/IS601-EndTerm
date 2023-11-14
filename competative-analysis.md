@@ -97,7 +97,7 @@ Using recyclable products and reusable items to minimise waste is recogonised by
 
 ## Scope for Improvement
 
-## Social Proof
+### Social Proof
 Adding customer testimonials, ratings, or reviews would give assurance to the customer.  
 
 ### Scarcity
