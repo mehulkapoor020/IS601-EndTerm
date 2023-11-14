@@ -40,4 +40,8 @@
  <tr>
     <td>Dec 12, 2023</td>
  </tr>
+ <tr>
+    <td>Dec 13, 2023</td>
+ </tr>
 </table>
+Instructions: Please place an 'X' in the cell under your name corresponding to the dates you attend class.
