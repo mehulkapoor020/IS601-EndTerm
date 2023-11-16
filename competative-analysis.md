@@ -79,3 +79,34 @@ Seasonal Items and limited time period offers can be introduced to create sense 
 Reviews from credible chefs and food critics and awards could encourage customers to eat there  
 
 
+# 3. Laduree Paris
+
+## Brand Archetype
+Lover:  
+The site potrays luxury, sofistication and celebrates the pleasure of tasting goodness. Used pastel colors like pink and gold.   
+
+## Methods of Persuasion
+
+### Consistency
+consistently providing customers with beautiful gifts, luxury food options and a plesureful experience.  
+
+### Liking
+
+Using recyclable products and reusable items to minimise waste is recogonised by the customer.
+
+
+## Scope for Improvement
+
+### Social Proof
+Adding customer testimonials, ratings, or reviews would give assurance to the customer.  
+
+### Scarcity
+Seasonal Items and limited time period offers can be introduced to create sense of urgency.  
+
+### Authority
+Reviews from credible chefs and food critics and awards could encourage customers to eat there.
+
+### Reciprocity
+Offering free products and just to get the customer to try aan item can bring in new customers who have never tried their products.
+
+
