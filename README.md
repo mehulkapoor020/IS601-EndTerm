@@ -4,3 +4,6 @@
 
 
 ## Business-Analysis Sheet [Click Here](competative-analysis.md)
+
+
+## SWOT-Analysis Sheet [Click Here](SWOT-analysis.md)
