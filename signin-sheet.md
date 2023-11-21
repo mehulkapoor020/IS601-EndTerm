@@ -29,6 +29,8 @@
  </tr>
  <tr>
     <td>Nov 21, 2023</td>
+    <td>X</td>
+    <td>X</td>
  </tr>
  <tr>
     <td>Nov 23, 2023</td>
