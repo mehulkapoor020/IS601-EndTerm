@@ -18,24 +18,31 @@
  </tr>
  <tr>
     <td>Nov 14, 2023</td>
+    <td>X</td>
  </tr>
  <tr>
     <td>Nov 16, 2023</td>
+    <td>X</td>
  </tr>
  <tr>
     <td>Nov 21, 2023</td>
+    <td>X</td>
  </tr>
  <tr>
     <td>Nov 23, 2023</td>
+    <td>X</td>
  </tr>
  <tr>
     <td>Nov 28, 2023</td>
+    <td>X</td>
  </tr>
  <tr>
     <td>Dec 1, 2023</td>
+    <td>X</td>
  </tr>
  <tr>
     <td>Dec 7, 2023</td>
+    <td>X</td>
  </tr>
  <tr>
     <td>Dec 12, 2023</td>
