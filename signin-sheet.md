@@ -19,13 +19,23 @@
  <tr>
     <td>Nov 14, 2023</td>
     <td>X</td>
+<<<<<<< HEAD
+=======
+    <td>X</td>
+
+>>>>>>> 47473a3972836849ead66df4b7322c964e1d55b3
  </tr>
  <tr>
     <td>Nov 16, 2023</td>
     <td>X</td>
+<<<<<<< HEAD
+=======
+    <td>X</td>
+>>>>>>> 47473a3972836849ead66df4b7322c964e1d55b3
  </tr>
  <tr>
     <td>Nov 21, 2023</td>
+    <td>X</td>
     <td>X</td>
  </tr>
  <tr>
