@@ -34,6 +34,11 @@ export default function NavBar() {
       className="bg-warning-500"
     >
 
+      <NavbarMenuToggle
+        aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+        className="sm:hidden"
+      />
+
       <NavbarContent justify="start" className="pt-2">
         <NavbarBrand>
           <Logo />
@@ -58,6 +63,25 @@ export default function NavBar() {
           </NavbarItem>
         ))}
       </NavbarContent>
+
+      <NavbarMenu>
+        {menuItems.map((item, index) => (
+          <NavbarMenuItem key={index}>
+            <Link
+              className="w-full"
+              color="foreground"
+              href={item.url}
+              showAnchorIcon={item.showAnchor}
+              onPress={() => {
+                setActiveSection(index)
+              }}
+              size="lg"
+            >
+              {item.txt}
+            </Link>
+          </NavbarMenuItem>
+        ))}
+      </NavbarMenu>
 
       <NavbarContent justify="end">
         <NavbarItem>
