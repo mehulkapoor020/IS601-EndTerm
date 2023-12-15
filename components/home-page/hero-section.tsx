@@ -10,7 +10,7 @@ type HeroSectionProps = {
   sub_heading: string;
 };
 
-export default function HeroSection({ content, bg_url, btn, sub_heading }: HeroSectionProps) {
+export default function HeroSection() {
   return (
     <div className="h-fit">
       <div className='w-full text-white absolute z-10 h-full flex flex-col justify-center items-center gap-20'>
