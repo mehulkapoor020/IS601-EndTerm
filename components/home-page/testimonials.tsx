@@ -17,8 +17,8 @@ type TestimonialsProps = {
 const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
     return (
         <div id='reviews' className="max-w-5xl py-10 m-auto flex flex-col justify-center items-center gap-20">
-            <p className='font-bold text-3xl lg:text-4xl'>Foodies Experience</p>
-            <div className="flex gap-24 flex-wrap justify-center lg:flex-nowrap">
+            <p className='lg:text-4xl font-bold text-3xl'>Foodies Experience</p>
+            <div className="lg:flex-nowrap flex gap-24 flex-wrap justify-center">
                 {testimonials.map((item, index) => (
                     <Testimonial key={index} {...item} />
                 ))}
