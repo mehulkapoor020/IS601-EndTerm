@@ -4,6 +4,7 @@ import NavBar from '../../components/common-components/nav-bar';
 import Layout from "../../components/common-components/layout";
 import HeroSection from "../../components/home-page/hero-section";
 import Menu from "../../components/home-page/menu";
+import Testimonials from "../../components/home-page/testimonials";
 import { getDetails, getMenu, getTestimonials } from '../../lib/utils';
 import CTASection from "../../components/home-page/CTA";
 
@@ -36,6 +37,7 @@ export default async function Home() {
         content={ctaData.content}
       />
       <Menu menu={menuDetails}/>
+      <Testimonials />
     </Layout>
   )
 }
