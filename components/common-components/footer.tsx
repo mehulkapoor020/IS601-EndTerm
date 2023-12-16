@@ -25,12 +25,12 @@ export default function Footer() {
             icon: "/footer/insta.svg",
             showAnchor: true
         },
-        // {
-        //     txt: "FIND US",
-        //     url: '#',
-        //     icon: "/footer/location.svg",
-        //     showAnchor: true
-        // }
+        {
+            txt: "FIND US",
+            url: '#',
+            icon: "/footer/location.svg",
+            showAnchor: true
+        }
     ];
 
     return (
