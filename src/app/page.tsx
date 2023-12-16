@@ -4,6 +4,7 @@ import NavBar from '../../components/common-components/nav-bar';
 import Layout from "../../components/common-components/layout";
 import HeroSection from "../../components/home-page/hero-section";
 import Menu from "../../components/home-page/menu";
+import Testimonials from "../../components/home-page/testimonials";
 import { getDetails, getMenu, getTestimonials } from '../../lib/utils';
 import CTASection from "../../components/home-page/CTA";
 
@@ -20,6 +21,18 @@ export default async function Home() {
       image: data.image as string
     }
   });
+
+  const testimonials = getTestimonials()
+  const testimonialsDetails = testimonials.map((itemName) => {
+    const {content, data} = getDetails(`landing_page/testimonials/${itemName}.md`)
+    return {
+      name: itemName,
+      image: data.image,
+      rating: data.rating,
+      content: content
+    }
+  });
+
   return (
     <Layout>
       <NavBar />
@@ -36,6 +49,7 @@ export default async function Home() {
         content={ctaData.content}
       />
       <Menu menu={menuDetails}/>
+      <Testimonials testimonials={testimonialsDetails}/>
     </Layout>
   )
 }
