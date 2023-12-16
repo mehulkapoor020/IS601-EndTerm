@@ -15,7 +15,7 @@ export default function CTASection(
 ) {
 
   return (
-    <div id='' className="max-w-5xl mx-auto mt-[900px] flex flex-col justify-center items-center my-10 p-10 gap-10 rounded-3xl">
+    <div id='' className="max-w-5xl mx-auto mt-[900px] lg:mt-[1000px] flex flex-col lg:flex-row justify-center items-center lg:bg-[#FF9C6A] my-10 p-10 gap-10 rounded-3xl">
       <Image
         src={image}
         alt=""
@@ -26,7 +26,7 @@ export default function CTASection(
         <p className='font-extrabold text-3xl'>{parse(heading)}</p>
         <p className='text-xl text-center'>{parse(content)}</p>
         <Button
-          className="text-white font-bold shadow-2xl bg-black"
+          className="text-white font-bold shadow-2xl lg:shadow-amber-700 bg-black"
           size="lg"
           as={Link}
           href="http://eepurl.com/iFDbkc"
