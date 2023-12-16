@@ -13,12 +13,12 @@ export default function Footer() {
             icon: "/footer/about_us.svg",
             showAnchor: false
         },
-        // {
-        //     txt: "JOIN THE CLUB",
-        //     url: '#',
-        //     icon: "/footer/join_us.svg",
-        //     showAnchor: false
-        // },
+        {
+            txt: "JOIN THE CLUB",
+            url: '#',
+            icon: "/footer/join_us.svg",
+            showAnchor: false
+        },
         // {
         //     txt: "FOLLOW US",
         //     url: '#',
