@@ -7,6 +7,7 @@ import Menu from "../../components/home-page/menu";
 import Testimonials from "../../components/home-page/testimonials";
 import { getDetails, getMenu, getTestimonials } from '../../lib/utils';
 import CTASection from "../../components/home-page/CTA";
+import Footer from "../../components/common-components/footer";
 
 export default async function Home() {
   const {content, data} = getDetails('landing_page/landing_page.md');
@@ -50,6 +51,7 @@ export default async function Home() {
       />
       <Menu menu={menuDetails}/>
       <Testimonials testimonials={testimonialsDetails}/>
+      <Footer />
     </Layout>
   )
 }
