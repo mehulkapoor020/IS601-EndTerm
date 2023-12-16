@@ -39,7 +39,7 @@ export default function Footer() {
             className="bg-warning-500 h-24"
         >
 
-            <NavbarContent justify="start" className="pt-2 text-xl hidden">
+            <NavbarContent justify="start" className="pt-2 text-xl hidden lg:flex">
                 <NavbarBrand>
                     <Logo showLogo={false} clsName="font-4xl"/>
                 </NavbarBrand>
