@@ -19,18 +19,18 @@ export default function Footer() {
             icon: "/footer/join_us.svg",
             showAnchor: false
         },
-        // {
-        //     txt: "FOLLOW US",
-        //     url: '#',
-        //     icon: "/footer/insta.svg",
-        //     showAnchor: true
-        // },
-        // {
-        //     txt: "FIND US",
-        //     url: '#',
-        //     icon: "/footer/location.svg",
-        //     showAnchor: true
-        // }
+        {
+            txt: "FOLLOW US",
+            url: '#',
+            icon: "/footer/insta.svg",
+            showAnchor: true
+        },
+        {
+            txt: "FIND US",
+            url: '#',
+            icon: "/footer/location.svg",
+            showAnchor: true
+        }
     ];
 
     return (
