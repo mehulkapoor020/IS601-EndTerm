@@ -10,6 +10,16 @@ import CTASection from "../../components/home-page/CTA";
 export default async function Home() {
   const {content, data} = getDetails('landing_page/landing_page.md');
   const ctaData = getDetails('landing_page/cta.md')
+
+  const menu = getMenu()
+  const menuDetails = menu.map((itemName) => {
+    const {content, data} = getDetails(`landing_page/menu/${itemName}.md`)
+    return {
+      name: itemName,
+      price: data.price as string,
+      image: data.image as string
+    }
+  });
   return (
     <Layout>
       <NavBar />
@@ -25,7 +35,7 @@ export default async function Home() {
         heading={ctaData.data.heading}
         content={ctaData.content}
       />
-      <Menu />
+      <Menu menu={menuDetails}/>
     </Layout>
   )
 }
