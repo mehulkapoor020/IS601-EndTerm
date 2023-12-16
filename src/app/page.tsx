@@ -6,7 +6,7 @@ import HeroSection from "../../components/home-page/hero-section";
 import { getDetails, getMenu, getTestimonials } from '../../lib/utils';
 import CTASection from "../../components/home-page/CTA";
 
-export default function Home() {
+export default async function Home() {
   const {content, data} = getDetails('landing_page/landing_page.md');
   const ctaData = getDetails('landing_page/cta.md')
   return (
