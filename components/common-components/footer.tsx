@@ -7,12 +7,12 @@ import Image from "next/image";
 export default function Footer() {
 
     const menuItems = [
-        // {
-        //     txt: "ABOUT US",
-        //     url: '/about_us',
-        //     icon: "/footer/about_us.svg",
-        //     showAnchor: false
-        // },
+        {
+            txt: "ABOUT US",
+            url: '/about_us',
+            icon: "/footer/about_us.svg",
+            showAnchor: false
+        },
         // {
         //     txt: "JOIN THE CLUB",
         //     url: '#',
