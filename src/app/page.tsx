@@ -1,4 +1,4 @@
-"use client";
+"use server"
 import * as React from "react";
 import NavBar from '../../components/common-components/nav-bar';
 import Layout from "../../components/common-components/layout";
