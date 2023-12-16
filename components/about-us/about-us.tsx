@@ -13,14 +13,14 @@ export default function AboutUsSection() {
         <p className='text-left text-lg'>
           We our an Authentic French Bakery. Our aim is to transport customers on a delightful journey to France through our renowned selection of delectable French pastries and culinary delights.
         </p>
-      </div>
+      </div> */}
       <Image
         className='object-cover'
         src="/about_us/french.png"
         alt=""
         height={500}
         width={500}
-      /> */}
+      />
     </div>
   );
 };
