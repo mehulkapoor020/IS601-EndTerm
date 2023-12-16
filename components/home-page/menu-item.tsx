@@ -9,7 +9,7 @@ export type MenuProps = {
 
 export default function MenuItem({ menu }: { menu: MenuProps }) {
   return (
-    <Card className='max-w-sm lg:max-w-xl bg-warning-500 data-[hover]:bg-warning-300' shadow="lg" isHoverable>
+    <Card className='max-w-sm bg-warning-500 lg:max-w-xl data-[hover]:bg-warning-300' shadow="lg" isHoverable>
       <CardBody className="">
         <Image
           alt="name"
@@ -19,7 +19,7 @@ export default function MenuItem({ menu }: { menu: MenuProps }) {
           height={342}
         />
       </CardBody>
-      <CardFooter className="md:text-lg justify-between">
+      <CardFooter className="justify-between md:text-lg">
         <b>{menu.name}</b>
         <p className="text-default-500">{menu.price}</p>
       </CardFooter>
