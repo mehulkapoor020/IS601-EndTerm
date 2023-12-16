@@ -12,7 +12,7 @@ type TestimonialProps = {
 
 const Testimonial: React.FC<TestimonialProps> = ({ content, name, rating, image }) => {
     return (
-        <Card className='max-w-xs lg:max-w-[450px] bg-[#FF9C6A] data-[hover]:bg-warning-300' shadow="lg" isHoverable>
+        <Card className='lg:max-w-[450px] max-w-xs bg-[#FF9C6A] data-[hover]:bg-warning-300' shadow="lg" isHoverable>
             <CardHeader className="justify-between">
                 <div className="flex gap-5">
                     <Avatar isBordered color="warning" radius="full" size="lg" src={image} />
