@@ -3,6 +3,7 @@ import * as React from "react";
 import NavBar from '../../components/common-components/nav-bar';
 import Layout from "../../components/common-components/layout";
 import HeroSection from "../../components/home-page/hero-section";
+import Menu from "../../components/home-page/menu";
 import { getDetails, getMenu, getTestimonials } from '../../lib/utils';
 import CTASection from "../../components/home-page/CTA";
 
@@ -24,6 +25,7 @@ export default async function Home() {
         heading={ctaData.data.heading}
         content={ctaData.content}
       />
+      <Menu />
     </Layout>
   )
 }
