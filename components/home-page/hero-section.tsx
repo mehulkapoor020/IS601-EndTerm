@@ -1,6 +1,8 @@
 "use client"
 import { Button } from '@nextui-org/react';
 import Link from 'next/link';
+import parse from 'html-react-parser';
+import { useAnalyticsEventTracker } from '../../lib/gtagHelper';
 
 
 type HeroSectionProps = {
@@ -10,7 +12,7 @@ type HeroSectionProps = {
   sub_heading: string;
 };
 
-export default function HeroSection() {
+export default function HeroSection({ content, bg_url, btn, sub_heading }: HeroSectionProps) {
   return (
     <div className="h-fit">
       <div className='w-full text-white absolute z-10 h-full flex flex-col justify-center items-center gap-20'>
@@ -18,11 +20,11 @@ export default function HeroSection() {
           <p
             className='w-fit text-3xl sm:text-7xl font-bold text-center leading-tight'
           >
-            hi
+            {parse(content)}
           </p>
         </div>
         <div className='md:w-fit flex gap-10 md:gap-52 justify-center md:justify-end flex-col md:flex-row'>
-          <p className='text-lg md:text-2xl font-bold'>Text</p>
+          <p className='text-lg md:text-2xl font-bold'>{parse(sub_heading)}</p>
           <Button
             className="text-black font-bold shadow-2xl shadow-amber-700"
             size="lg"
@@ -30,13 +32,15 @@ export default function HeroSection() {
             as={Link}
             href="http://eepurl.com/iFDbkc"
             variant="solid"
+            onClick={() => useAnalyticsEventTracker('landing-page', "click-bait", "landing-page")}
           >
-            Button
+            {btn}
           </Button>
         </div>
       </div>
       <video className='absolute inset-0 object-cover w-full h-screen' autoPlay loop muted>
-        <source src="#" type="video/mp4" />
+        <source src={bg_url} type="video/mp4" />
+        Your browser does not support the video tag.
       </video>
       <div className="absolute inset-0 bg-black opacity-50"></div>
     </div>
