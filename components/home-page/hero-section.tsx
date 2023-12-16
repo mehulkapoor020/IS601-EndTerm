@@ -2,7 +2,6 @@
 import { Button } from '@nextui-org/react';
 import Link from 'next/link';
 import parse from 'html-react-parser';
-import { useAnalyticsEventTracker } from '../../lib/gtagHelper';
 
 
 type HeroSectionProps = {
@@ -32,7 +31,6 @@ export default function HeroSection({ content, bg_url, btn, sub_heading }: HeroS
             as={Link}
             href="http://eepurl.com/iFDbkc"
             variant="solid"
-            onClick={() => useAnalyticsEventTracker('landing-page', "click-bait", "landing-page")}
           >
             {btn}
           </Button>
