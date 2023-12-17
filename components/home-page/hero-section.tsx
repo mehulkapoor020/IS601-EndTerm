@@ -23,7 +23,7 @@ export default function HeroSection({ content, bg_url, btn, sub_heading }: HeroS
           </p>
         </div>
         <div className='md:w-fit flex gap-10 md:gap-52 justify-center md:justify-end flex-col md:flex-row'>
-          <p className='text-lg md:text-2xl font-bold'>{parse(sub_heading)}</p>
+          <p id="id-hero-subtext" className='text-lg md:text-2xl font-bold'>{parse(sub_heading)}</p>
           <Button
             className="text-black font-bold shadow-2xl shadow-amber-700"
             size="lg"

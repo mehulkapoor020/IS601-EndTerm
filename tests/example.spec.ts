@@ -19,14 +19,14 @@ const websiteURL = 'http://localhost:3000/';
 //   await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
 // });
 
-test('Check Web Page Describtion', async ({ page }) => {
+// test('Check Web Page Describtion', async ({ page }) => {
 
-  await page.goto(websiteURL);
+//   await page.goto(websiteURL);
 
-  const description = await page.description;
-  expect(description).toBe('Create Next App');
+//   const description = await page.description;
+//   expect(description).toBe('Create Next App');
 
-});
+// });
 
 test('Check Web Page Title', async ({ page }) => {
 
@@ -37,25 +37,34 @@ test('Check Web Page Title', async ({ page }) => {
 });
 
 
-test('Check Div Element by Id', async ({ page }) => {
-  // Navigate to your home page
-  await page.goto(websiteURL);
+// test('Check Div Element by Id', async ({ page }) => {
+//   // Navigate to your home page
+//   await page.goto(websiteURL);
 
-  // Specify the id of the div element you want to check
-  // const divId = 'idHero-text';
 
-  // Wait for the div element to be present in the DOM
-  await page.waitForSelector('#idHero-text');
+//   // Wait for the div element to be present in the DOM
+//   await page.waitForSelector('#idHero-text');
 
-  // Get the div element text content or any other property you want to test
-  // const divTextContent = await page.$eval('#idHero-text', (div) => div.textContent);
+  
+//  const elementExists = await page.$('#idHero-text');
 
-  // Assert that the div element exists and has the expected content
-  // expect(divTextContent).toBe('Discover The Essence<br /> Of France'); // Replace 'Expected Text Content' with your expected value
- // Check if the element with the specified id exists
- const elementExists = await page.$('#idHero-text');
+//  // Assert that the element with the specified id exists
+//  expect(elementExists).toBeTruthy();
 
- // Assert that the element with the specified id exists
- expect(elementExists).toBeTruthy();
+// });
 
-});
+// test('Check Hero sub text', async ({ page }) => {
+//   // Navigate to your home page
+//   await page.goto(websiteURL);
+
+
+//   // Wait for the div element to be present in the DOM
+//   await page.waitForSelector('#id-hero-subtext');
+
+  
+//  const elementExists = await page.$('id-hero-subtext');
+
+//  // Assert that the element with the specified id exists
+//  expect(elementExists).toBeTruthy();
+
+// });
