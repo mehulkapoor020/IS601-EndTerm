@@ -13,25 +13,31 @@ type CookieBannerProps = {
 };
 
 
-export default function CookieBanner({heading, content}: CookieBannerProps) {
+export default function CookieBanner({ heading, content }: CookieBannerProps) {
 
-    const storedCookieConsent = getLocalStorage("cookie_consent", null)
-    const [cookieConsent, setCookieConsent] = useState(storedCookieConsent);
+  const [cookieConsent, setCookieConsent] = useState(false);
 
-    useEffect(() => {
-        const newValue = cookieConsent ? 'granted' : 'denied'
+  useEffect (() => {
+      const storedCookieConsent = getLocalStorage("cookie_consent", null)
 
-        window.gtag("consent", 'update', {
-            'analytics_storage': newValue
-        });
+      setCookieConsent(storedCookieConsent)
+  }, [setCookieConsent])
 
-        setLocalStorage("cookie_consent", cookieConsent)
-
-        //For Testing
-        console.log("Cookie Consent: ", cookieConsent)
-
-    }, [cookieConsent]);
   
+  useEffect(() => {
+      const newValue = cookieConsent ? 'granted' : 'denied'
+
+      window.gtag("consent", 'update', {
+          'analytics_storage': newValue
+      });
+
+      setLocalStorage("cookie_consent", cookieConsent)
+
+      //For Testing
+      console.log("Cookie Consent: ", cookieConsent)
+
+  }, [cookieConsent]);
+
 
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
@@ -59,7 +65,7 @@ export default function CookieBanner({heading, content}: CookieBannerProps) {
 
       <div className='flex gap-2'>
         <Button
-          onClick={() => { setCookieConsent(false); useAnalyticsEventTracker('privacy-policy', 'declined', 'declined')}}
+          onClick={() => { setCookieConsent(false); useAnalyticsEventTracker('privacy-policy', 'declined', 'declined') }}
           color='warning'
           size='lg'
           className='text-xl font-bold'
@@ -67,7 +73,7 @@ export default function CookieBanner({heading, content}: CookieBannerProps) {
           Decline
         </Button>
         <Button
-          onClick={() => {setCookieConsent(true); useAnalyticsEventTracker('privacy-policy', 'accepted', 'accepted')}}
+          onClick={() => { setCookieConsent(true); useAnalyticsEventTracker('privacy-policy', 'accepted', 'accepted') }}
           color='warning'
           size='lg'
           className='text-xl font-bold'
