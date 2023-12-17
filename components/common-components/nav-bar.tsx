@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { NavbarMenuToggle, Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenu, NavbarMenuItem, Link, Button } from "@nextui-org/react";
 import Logo from "./logo";
+import { useAnalyticsEventTracker } from "../../lib/gtagHelper";
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -9,18 +10,21 @@ export default function NavBar() {
   const menuItems = [
     {
       txt: "About",
-      url: '/about-us',
+      url: '/about_us',
+      track: () => useAnalyticsEventTracker("about-us", "Navigated to About Us page", "about-us"),
       showAnchor: false,
     },
     {
       txt: "Reviews",
       url: '/#reviews',
       showAnchor: false,
+      track: () => useAnalyticsEventTracker("landing-page", "Navigated to Testimonials section", "landing-page")
     },
     {
       txt: "Menu",
       url: '/#menu',
       showAnchor: false,
+      track: () => useAnalyticsEventTracker("landing-page", "Navigated to Menu section", "landing-page")
     }
   ];
 
@@ -55,6 +59,7 @@ export default function NavBar() {
               onPress={
                 () => {
                   setActiveSection(index)
+                  item.track()
                 }
               }
             >
@@ -74,6 +79,7 @@ export default function NavBar() {
               showAnchorIcon={item.showAnchor}
               onPress={() => {
                 setActiveSection(index)
+                item.track()
               }}
               size="lg"
             >
@@ -91,6 +97,11 @@ export default function NavBar() {
             size="md"
             color="default"
             as={Link}
+            onClick={
+              () => useAnalyticsEventTracker(
+                'landing-page', "Sign Up Initiated", "landing-page"
+              )
+            }
             href="http://eepurl.com/iFDbkc"
             variant="solid"
           >

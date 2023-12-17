@@ -2,15 +2,15 @@ import Image from 'next/image';
 
 export default function Buy1Get1Section() {
   return (
-    <div className="">
+    <div className="flex flex-wrap w-full justify-center items-center gap-32 my-20">
       <Image
-        className='object-cover'
+        className='p-6 lg:p-0 object-cover'
         src="/about_us/get_1.png"
         alt=""
         height={430}
         width={360}
       />
-      <div className='w-96 flex flex-col gap-10'>
+      <div className='p-6 lg:p-0 w-96 flex flex-col gap-10'>
         <p
           className='text-center font-bold text-4xl'
         >
