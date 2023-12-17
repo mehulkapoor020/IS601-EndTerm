@@ -27,7 +27,7 @@ const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
                 className="text-black font-bold shadow-2xl shadow-amber-700"
                 size="lg"
                 as={Link}
-                href="/about_us"
+                href="/about-us"
                 variant="solid"
                 color='warning'
             >

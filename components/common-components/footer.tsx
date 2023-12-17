@@ -15,19 +15,19 @@ export default function Footer() {
         },
         {
             txt: "JOIN THE CLUB",
-            url: '#',
+            url: 'http://eepurl.com/iFDbkc',
             icon: "/footer/join_us.svg",
             showAnchor: false
         },
         {
             txt: "FOLLOW US",
-            url: '#',
+            url: 'https://www.instagram.com/lejardinduroichappaqua/?hl=en',
             icon: "/footer/insta.svg",
             showAnchor: true
         },
         {
             txt: "FIND US",
-            url: '#',
+            url: 'https://maps.app.goo.gl/c1q1VAYEesRkU6Bt5',
             icon: "/footer/location.svg",
             showAnchor: true
         }
