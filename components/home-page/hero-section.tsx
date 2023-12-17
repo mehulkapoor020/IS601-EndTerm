@@ -11,18 +11,25 @@ type HeroSectionProps = {
   sub_heading: string;
 };
 
+import { Nunito } from 'next/font/google'
+ 
+const nunito = Nunito({
+  weight: "700",
+  subsets: ['latin'],
+})
+
 export default function HeroSection({ content, bg_url, btn, sub_heading }: HeroSectionProps) {
   return (
     <div className="h-fit">
-      <div className='w-full text-white absolute z-10 h-full flex flex-col justify-center items-center gap-20'>
+      <div className="w-full text-white absolute z-10 h-full flex flex-col justify-center items-center gap-28">
         <div>
           <p
-            className='w-fit text-3xl sm:text-7xl font-bold text-center leading-tight'
+            className={`${nunito.className} w-fit text-3xl sm:text-7xl font-bold text-center leading-tight`}
           >
             {parse(content)}
           </p>
         </div>
-        <div className='md:w-fit flex gap-10 md:gap-52 justify-center md:justify-end flex-col md:flex-row'>
+        <div className='md:w-fit flex gap-10 md:gap-52 justify-center md:justify-end flex-col md:flex-row p-6 md:p-0'>
           <p className='text-lg md:text-2xl font-bold'>{parse(sub_heading)}</p>
           <Button
             className="text-black font-bold shadow-2xl shadow-amber-700"
