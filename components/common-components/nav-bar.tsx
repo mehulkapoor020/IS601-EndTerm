@@ -10,7 +10,7 @@ export default function NavBar() {
   const menuItems = [
     {
       txt: "About",
-      url: '/about_us',
+      url: '/about-us',
       track: () => useAnalyticsEventTracker("about-us", "Navigated to About Us page", "about-us"),
       showAnchor: false,
     },
