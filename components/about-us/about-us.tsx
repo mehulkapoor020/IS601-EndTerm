@@ -4,7 +4,7 @@ import parse from 'html-react-parser';
 export default function AboutUsSection() {
   return (
     <div className="flex w-full justify-center items-center gap-32 mt-20">
-      <div className='w-96 flex flex-col gap-10'>
+      <div className='w-96 flex flex-col gap-10 p-6 lg:p-0'>
         <p
           className='text-center font-bold text-4xl'
         >
@@ -15,7 +15,7 @@ export default function AboutUsSection() {
         </p>
       </div>
       <Image
-        className='object-cover'
+        className='hidden lg:flex object-cover'
         src="/about_us/french.png"
         alt=""
         height={500}
