@@ -16,7 +16,7 @@ export default function HeroSection({ content, bg_url, btn, sub_heading }: HeroS
     <div className="h-fit">
       <div className='w-full text-white absolute z-10 h-full flex flex-col justify-center items-center gap-20'>
         <div>
-          <p
+          <p id="idHero-text"
             className='w-fit text-3xl sm:text-7xl font-bold text-center leading-tight'
           >
             {parse(content)}
