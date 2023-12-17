@@ -9,7 +9,7 @@ export default function Footer() {
     const menuItems = [
         {
             txt: "ABOUT US",
-            url: '/about_us',
+            url: '/about-us',
             icon: "/footer/about_us.svg",
             showAnchor: false
         },
