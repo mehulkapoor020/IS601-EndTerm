@@ -3,9 +3,17 @@
 import { getLocalStorage, setLocalStorage } from '../../lib/storageHelper';
 import { useState, useEffect } from 'react';
 import { Modal, ModalContent, ModalHeader, ModalBody, Button, useDisclosure } from "@nextui-org/react";
+import parse from 'html-react-parser';
+import { useAnalyticsEventTracker } from '../../lib/gtagHelper';
 
 
-export default function CookieBanner() {
+type CookieBannerProps = {
+  heading: string;
+  content: string;
+};
+
+
+export default function CookieBanner({heading, content}: CookieBannerProps) {
 
     const storedCookieConsent = getLocalStorage("cookie_consent", null)
     const [cookieConsent, setCookieConsent] = useState(storedCookieConsent);
@@ -38,10 +46,10 @@ export default function CookieBanner() {
           {(onClose) => (
             <>
               <ModalHeader className="flex flex-col gap-1">
-                "hi"
+                {parse(heading)}
               </ModalHeader>
               <ModalBody>
-                "hi"
+                {parse(content)}
               </ModalBody>
             </>
           )}
@@ -51,7 +59,7 @@ export default function CookieBanner() {
 
       <div className='flex gap-2'>
         <Button
-          onClick={() => { setCookieConsent(false)}}
+          onClick={() => { setCookieConsent(false); useAnalyticsEventTracker('privacy-policy', 'declined', 'declined')}}
           color='warning'
           size='lg'
           className='text-xl font-bold'
@@ -59,7 +67,7 @@ export default function CookieBanner() {
           Decline
         </Button>
         <Button
-          onClick={() => {setCookieConsent(true)}}
+          onClick={() => {setCookieConsent(true); useAnalyticsEventTracker('privacy-policy', 'accepted', 'accepted')}}
           color='warning'
           size='lg'
           className='text-xl font-bold'
