@@ -23,7 +23,7 @@ test('Check Web Page Describtion', async ({ page }) => {
 
   await page.goto(websiteURL);
 
-  const description = await page.description();
+  const description = await page.description;
   expect(description).toBe('Create Next App');
 
 });
