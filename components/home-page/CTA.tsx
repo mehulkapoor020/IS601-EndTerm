@@ -2,6 +2,7 @@
 import { Button, Link } from '@nextui-org/react';
 import Image from 'next/image';
 import parse from 'html-react-parser';
+import { useAnalyticsEventTracker } from '../../lib/gtagHelper';
 
 type CTASectionProps = {
   content: string;
@@ -31,6 +32,7 @@ export default function CTASection(
           as={Link}
           href="http://eepurl.com/iFDbkc"
           variant="solid"
+          onClick={() => useAnalyticsEventTracker('landing-page', 'CTA clicked', 'landing-page')}
         >
           {btn}
         </Button>
