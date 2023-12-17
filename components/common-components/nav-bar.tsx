@@ -9,7 +9,7 @@ export default function NavBar() {
   const menuItems = [
     {
       txt: "About",
-      url: '/about_us',
+      url: '/about-us',
       showAnchor: false,
     },
     {
