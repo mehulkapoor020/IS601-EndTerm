@@ -29,7 +29,7 @@ export default function HeroSection({ content, bg_url, btn, sub_heading }: HeroS
             {parse(content)}
           </p>
         </div>
-        <div className='md:w-fit flex gap-10 md:gap-52 justify-center md:justify-end flex-col md:flex-row'>
+        <div className='md:w-fit flex gap-10 md:gap-52 justify-center md:justify-end flex-col md:flex-row p-6 md:p-0'>
           <p className='text-lg md:text-2xl font-bold'>{parse(sub_heading)}</p>
           <Button
             className="text-black font-bold shadow-2xl shadow-amber-700"
