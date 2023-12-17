@@ -25,7 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <GoogleAnalytics GA_MEASUREMENT_ID={TRACKING_ID} />
       <body className={inter.className}>{children}</body>
-      {/* <CookieBanner heading={data.heading} content={content}/> */}
+      <CookieBanner heading={data.heading} content={content}/>
     </html>
   )
 }
