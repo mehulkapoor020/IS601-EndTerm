@@ -11,8 +11,8 @@ export default function NavBar() {
     {
       txt: "About",
       url: '/about_us',
+      track: () => useAnalyticsEventTracker("about-us", "Navigated to About Us page", "about-us"),
       showAnchor: false,
-      track: () => useAnalyticsEventTracker("about-us", "Navigated to About Us page", "about-us")
     },
     {
       txt: "Reviews",
