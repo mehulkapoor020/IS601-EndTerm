@@ -33,7 +33,7 @@ test('Check Web Page Title', async ({ page }) => {
   await page.goto(websiteURL);
 
   const title = await page.title();
-  expect(title).toBe('Create Next App');
+  expect(title).toBe('Le Jardin');
 });
 
 
