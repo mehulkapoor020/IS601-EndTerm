@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Logo({ showLogo = true, clsName = '' }) {
     return (
         <>
-            <Link className={`font-bold text-large text-black ${clsName}`} href="/">
+            <Link id="id-brand-logo" className={`font-bold text-large text-black ${clsName}`} href="/">
                 {showLogo && (
                     <Image
                         className='object-cover p-2 pb-4'
@@ -14,7 +14,7 @@ export default function Logo({ showLogo = true, clsName = '' }) {
                         width={50}
                     />
                 )}
-                Le Jardin
+                Le JARDIN
             </Link>
         </>
     );
