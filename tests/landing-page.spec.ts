@@ -276,4 +276,19 @@ test('Check hero text content', async ({ page }) => {
   
   });
 
+  test('Check presence of Brand logo in the NavBar', async ({ page }) => {
+    // Navigate to the page where the component is rendered
+    await page.goto(websiteURL); // Replace websiteURL with the actual URL
+  
+    // Wait for the Link component to be present in the DOM
+    await page.waitForSelector('#id-brand-logo');
+  
+    // Get the Image element within the Link component
+    const imageElement = await page.$('#id-brand-logo img');
+  
+    // Assert that the Image element exists
+    expect(imageElement).toBeTruthy();
+  });
+  
+
   
