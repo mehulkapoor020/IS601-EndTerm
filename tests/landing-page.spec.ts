@@ -144,5 +144,19 @@ test('Check hero text content', async ({ page }) => {
     // Assert that the actual button content matches the expected content
     expect(buttonText).toBe(expectedButtonContent);
   });
+
+  test('Check presence of the Bakersclub image', async ({ page }) => {
+    // Navigate to the page where the image is present
+    await page.goto(websiteURL); // Replace websiteURL with the actual URL
+  
+    // Wait for the image element with the specified ID to be present in the DOM
+    await page.waitForSelector('#id-bakers-image');
+  
+    // Check if the image element with the specified ID exists
+    const imageElement = await page.$('#id-bakers-image');
+  
+    // Assert that the image element with the specified ID exists
+    expect(imageElement).toBeTruthy();
+  });
   
   
