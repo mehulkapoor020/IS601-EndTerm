@@ -26,7 +26,7 @@ const Testimonial: React.FC<TestimonialProps> = ({ content, name, rating, image 
             </CardBody>
             <Divider />
             <CardFooter className="">
-                <div className="flex w-full justify-between font-bold">
+                <div id="id-ratings" className="flex w-full justify-between font-bold">
                     <p>Rating</p>
                     <p className="">{rating}/5</p>
                 </div>

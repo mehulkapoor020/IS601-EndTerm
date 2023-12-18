@@ -23,7 +23,7 @@ const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
                     <Testimonial key={index} {...item} />
                 ))}
             </div>
-            <Button
+            <Button id="id-reviews-button"
                 className="text-black font-bold shadow-2xl shadow-amber-700"
                 size="lg"
                 as={Link}

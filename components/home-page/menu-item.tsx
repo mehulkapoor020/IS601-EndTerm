@@ -19,7 +19,7 @@ export default function MenuItem({ menu }: { menu: MenuProps }) {
           height={342}
         />
       </CardBody>
-      <CardFooter className="justify-between md:text-lg">
+      <CardFooter id="id-menuNamePrice" className="justify-between md:text-lg">
         <b>{menu.name}</b>
         <p className="text-default-500">{menu.price}</p>
       </CardFooter>

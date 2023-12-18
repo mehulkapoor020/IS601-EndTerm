@@ -32,7 +32,7 @@ export default function HeroSection({ content, bg_url, btn, sub_heading }: HeroS
         </div>
         <div className='md:w-fit flex gap-10 md:gap-52 justify-center md:justify-end flex-col md:flex-row p-6 md:p-0'>
       <p id="id-hero-subtext" className='text-lg md:text-2xl font-bold'>{parse(sub_heading)}</p>
-      <Button
+      <Button id='id-hero-button'
         className="text-black font-bold shadow-2xl shadow-amber-700"
         size="lg"
         color="warning"
@@ -44,7 +44,7 @@ export default function HeroSection({ content, bg_url, btn, sub_heading }: HeroS
       </Button>
     </div>
   </div>
-    <video className='absolute inset-0 object-cover w-full h-screen' autoPlay loop muted>
+    <video id="id-hero-video" className='absolute inset-0 object-cover w-full h-screen' autoPlay loop muted>
       <source src={bg_url} type="video/mp4" />
       Your browser does not support the video tag.
     </video>
