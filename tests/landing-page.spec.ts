@@ -88,4 +88,25 @@ test('Check hero text content', async ({ page }) => {
     // Assert that the actual button content matches the expected content
     expect(buttonText).toBe(expectedButtonContent);
   });
+
+
+  test('Check Bakers Club heading and its content', async ({ page }) => {
+    // Navigate to the page where the heading is present
+    await page.goto(websiteURL); // Replace websiteURL with the actual URL
+  
+    // Wait for the heading element with the specified ID to be present in the DOM
+    await page.waitForSelector('#id-bakers-heading');
+  
+    // Get the text content of the heading element with the specified ID
+    const headingText = await page.$eval('#id-bakers-heading', (heading) => heading.textContent);
+  
+    // Assert that the heading element with the specified ID exists
+    expect(headingText).toBeTruthy();
+  
+    // Replace 'Expected Heading Content' with the actual text content you expect
+    const expectedHeadingContent = "Baker's Club";
+  
+    // Assert that the actual heading content matches the expected content
+    expect(headingText).toBe(expectedHeadingContent);
+  });
   
