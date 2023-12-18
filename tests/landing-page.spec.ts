@@ -255,4 +255,25 @@ test('Check hero text content', async ({ page }) => {
     expect(buttonText).toBe(expectedButtonText);
   });
 
+  test('Check presence Ratings in the testimonials', async ({ page }) => {
+    // Navigate to the page where the component is rendered
+    await page.goto(websiteURL); // Replace websiteURL with the actual URL
+  
+    // Wait for the div element with the specified ID to be present in the DOM
+    await page.waitForSelector('#id-ratings');
+  
+    // Get the text content of the first <p> tag
+    const firstPText = await page.$eval('#id-ratings > p:nth-child(1)', (pTag) => pTag.textContent);
+  
+    // Assert that the first <p> tag exists and has content
+    expect(firstPText).toBeTruthy();
+  
+    // Replace 'Rating' with the actual text content you expect for the first <p> tag
+    const expectedFirstPText = 'Rating';
+  
+    // Assert that the actual content of the first <p> tag matches the expected content
+    expect(firstPText).toBe(expectedFirstPText);
+  
+  });
+
   
