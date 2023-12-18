@@ -68,3 +68,24 @@ test('Check hero text content', async ({ page }) => {
       muted: true,
     });
   });
+
+  test('Check CTA button and its content', async ({ page }) => {
+    // Navigate to the page where the button is present
+    await page.goto(websiteURL); // Replace websiteURL with the actual URL
+  
+    // Wait for the button element with the specified ID to be present in the DOM
+    await page.waitForSelector('#id-hero-button');
+  
+    // Get the text content of the button element with the specified ID
+    const buttonText = await page.$eval('#id-hero-button', (button) => button.textContent);
+  
+    // Assert that the button element with the specified ID exists
+    expect(buttonText).toBeTruthy();
+  
+    // Replace 'Expected Button Content' with the actual text content you expect
+    const expectedButtonContent = 'JOIN CLUB';
+  
+    // Assert that the actual button content matches the expected content
+    expect(buttonText).toBe(expectedButtonContent);
+  });
+  
