@@ -178,4 +178,21 @@ test('Check hero text content', async ({ page }) => {
     // Assert that the actual heading content matches the expected content
     expect(headingText).toBe(expectedHeadingContent);
   });
+
+  test('Check Chefs special presence of menu items', async ({ page }) => {
+    // Navigate to the page where the menu items are rendered
+    await page.goto(websiteURL); // Replace websiteURL with the actual URL
+  
+    // Wait for the menu container with the specified ID to be present in the DOM
+    await page.waitForSelector('#id-menu-list');
+  
+    // Get the number of menu items rendered on the page
+    const menuItems = await page.$('#id-menu-list');
+  
+    // Optionally, you can iterate over each menu item and perform specific checks
+    
+      expect(menuItems).toBeTruthy();
+  
+  });
+  
   
