@@ -215,5 +215,24 @@ test('Check hero text content', async ({ page }) => {
     expect(paragraphTagContent).toBeTruthy();
   });
   
+  test('Check Testimonails presence and content of heading', async ({ page }) => {
+    // Navigate to the page where the component is rendered
+    await page.goto(websiteURL); // Replace websiteURL with the actual URL
+  
+    // Wait for the <p> tag with the specified content to be present in the DOM
+    await page.waitForSelector('div#reviews p.lg\\:text-4xl.font-bold.text-3xl');
+  
+    // Get the text content of the <p> tag with the specified content
+    const paragraphText = await page.$eval('div#reviews p.lg\\:text-4xl.font-bold.text-3xl', (paragraph) => paragraph.textContent);
+  
+    // Assert that the <p> tag with the specified content exists
+    expect(paragraphText).toBeTruthy();
+  
+    // Replace 'Foodies Experience' with the actual text content you expect
+    const expectedParagraphContent = 'Foodies Experience';
+  
+    // Assert that the actual <p> tag content matches the expected content
+    expect(paragraphText).toBe(expectedParagraphContent);
+  });
   
   
