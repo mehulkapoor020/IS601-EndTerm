@@ -43,4 +43,19 @@ test('Check About Us section for presence and content of heading', async ({ page
   expect(secondParagraphText).toBe(expectedSecondParagraphContent);
 });
 
+test('Check presence of the image in About us section', async ({ page }) => {
+    // Navigate to the page where the component is rendered
+    await page.goto(websiteURL2); // Replace websiteURL with the actual URL
+  
+    // Wait for the image element to be present in the DOM
+    await page.waitForSelector('#id-aboutUs img');
+  
+    // Get the image element
+    const imageElement = await page.$('#id-aboutUs img');
+  
+    // Assert that the image element exists
+    expect(imageElement).toBeTruthy();
+  });
+  
+
   
