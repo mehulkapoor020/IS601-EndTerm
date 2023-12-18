@@ -26,4 +26,19 @@ test('Check hero text content', async ({ page }) => {
    expect(elementExists).toBeTruthy();
   
   });
+
+  test('Check presence of Hero sub heading content', async ({ page }) => {
+    // Navigate to the page where the element is present
+    await page.goto(websiteURL); // Replace websiteURL with the actual URL
+  
+    // Wait for the paragraph element to be present in the DOM
+    await page.waitForSelector('#id-hero-subtext');
+  
+    // Check if the element with the specified id exists
+    const subHeadingElement = await page.$('#id-hero-subtext');
+  
+    // Assert that the element with the specified id exists
+    expect(subHeadingElement).toBeTruthy();
+  });
+  
   
