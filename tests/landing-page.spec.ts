@@ -235,4 +235,24 @@ test('Check hero text content', async ({ page }) => {
     expect(paragraphText).toBe(expectedParagraphContent);
   });
   
+  test('Check Testimonails sectionfor the presence and content of the button', async ({ page }) => {
+    // Navigate to the page where the component is rendered
+    await page.goto(websiteURL); // Replace websiteURL with the actual URL
+  
+    // Wait for the button element with the specified ID to be present in the DOM
+    await page.waitForSelector('#id-reviews-button');
+  
+    // Get the text content of the button with the specified ID
+    const buttonText = await page.$eval('#id-reviews-button', (button) => button.textContent);
+  
+    // Assert that the button element with the specified ID exists
+    expect(buttonText).toBeTruthy();
+  
+    // Replace 'KNOW MORE ABOUT US' with the actual text content you expect
+    const expectedButtonText = 'KNOW MORE ABOUT US';
+  
+    // Assert that the actual button content matches the expected content
+    expect(buttonText).toBe(expectedButtonText);
+  });
+
   
