@@ -194,5 +194,26 @@ test('Check hero text content', async ({ page }) => {
       expect(menuItems).toBeTruthy();
   
   });
+
+  test('Check presence of item name and price in Chefs Special', async ({ page }) => {
+    // Navigate to the page where the CardFooter component is rendered
+    await page.goto(websiteURL); // Replace websiteURL with the actual URL
+  
+    // Wait for the CardFooter component to be present in the DOM
+    await page.waitForSelector('#id-menuNamePrice');
+  
+    // Get the content of the <b> tag within the CardFooter component
+    const boldTagContent = await page.$eval('#id-menuNamePrice b', (boldTag) => boldTag.textContent);
+  
+    // Get the content of the <p> tag within the CardFooter component
+    const paragraphTagContent = await page.$eval('#id-menuNamePrice p', (paragraphTag) => paragraphTag.textContent);
+  
+    // Assert that the <b> tag content is present and not empty
+    expect(boldTagContent).toBeTruthy();
+  
+    // Assert that the <p> tag content is present and not empty
+    expect(paragraphTagContent).toBeTruthy();
+  });
+  
   
   
