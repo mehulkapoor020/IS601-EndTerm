@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 const websiteURL = 'http://localhost:3000/';
-const websiteURL2 ='http://localhost:3000/about-us'
+const websiteURL2 ='http://localhost:3000/about-us';
 
 test('Check Web Page Title', async ({ page }) => {
 
@@ -41,4 +41,30 @@ test('Check hero text content', async ({ page }) => {
     expect(subHeadingElement).toBeTruthy();
   });
   
+  test('Check Video element In Hero section', async ({ page }) => {
+    // Navigate to the page where the element is present
+    await page.goto(websiteURL); // Replace websiteURL with the actual URL
   
+    // Wait for the video element to be present in the DOM
+    await page.waitForSelector('#id-hero-video');
+  
+    // Check if the video element with the specified id and attributes exists
+    const videoElement = await page.$eval('#id-hero-video', (element) => {
+      return {
+        id: element.id,
+        className: element.className,
+        autoPlay: element.hasAttribute('autoplay'),
+        loop: element.hasAttribute('loop'),
+        muted: element.hasAttribute('muted'),
+      };
+    });
+  
+    // Assert that the video element with the specified id and attributes exists
+    expect(videoElement).toEqual({
+      id: 'id-hero-video',
+      className: 'absolute inset-0 object-cover w-full h-screen',
+      autoPlay: true,
+      loop: true,
+      muted: true,
+    });
+  });

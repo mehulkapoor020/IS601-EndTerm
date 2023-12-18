@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 const websiteURL = 'http://localhost:3000/';
-// const websiteURL2 ='http://localhost:3000/about-us'
+const websiteURL2 ='http://localhost:3000/about-us';
 
 // test('Check Web Page Title', async ({ page }) => {
 
