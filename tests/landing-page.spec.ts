@@ -109,4 +109,19 @@ test('Check hero text content', async ({ page }) => {
     // Assert that the actual heading content matches the expected content
     expect(headingText).toBe(expectedHeadingContent);
   });
+
+  test('Check the Bakers Club subtext', async ({ page }) => {
+    // Navigate to the page where the subtext is present
+    await page.goto(websiteURL); // Replace websiteURL with the actual URL
+  
+    // Wait for the subtext element with the specified ID to be present in the DOM
+    await page.waitForSelector('#id-bakers-Subtext');
+  
+  
+    // Check if the element with the specified id exists
+    const subtextContent = await page.$('#id-bakers-Subtext');
+  
+    // Assert that the element with the specified id exists
+    expect(subtextContent).toBeTruthy();
+  });
   
