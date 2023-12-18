@@ -77,6 +77,25 @@ test('Check presence of the image in About us section', async ({ page }) => {
     expect(firstParagraphText).toBe(expectedFirstParagraphContent);
   });
   
+  test('Check Our Mission section for presence and content of Subtext', async ({ page }) => {
+    // Navigate to the page where the component is rendered
+    await page.goto(websiteURL2); // Replace websiteURL with the actual URL
+  
+    // Wait for the second <p> tag to be present in the DOM
+    await page.waitForSelector('#id-missionText p:nth-child(2)');
+  
+    // Get the text content of the second <p> tag
+    const secondParagraphText = await page.$eval('#id-missionText p:nth-child(2)', (paragraph) => paragraph.textContent);
+  
+    // Assert that the second <p> tag exists
+    expect(secondParagraphText).toBeTruthy();
+  
+    // Replace the expected content with the actual text content you expect for the second <p> tag
+    const expectedSecondParagraphContent = 'Our goal is to address hunger through a buy-1-give-1 model. For every item purchased, we commit to donating a corresponding item to the local food bank, contributing to the fight against hunger.';
+  
+    // Assert that the actual content of the second <p> tag matches the expected content
+    expect(secondParagraphText).toBe(expectedSecondParagraphContent);
+  });
   
 
   
