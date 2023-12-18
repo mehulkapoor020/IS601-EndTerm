@@ -56,6 +56,27 @@ test('Check presence of the image in About us section', async ({ page }) => {
     // Assert that the image element exists
     expect(imageElement).toBeTruthy();
   });
+
+  test('Check Our Mission section for presence of heading content', async ({ page }) => {
+    // Navigate to the page where the component is rendered
+    await page.goto(websiteURL2); // Replace websiteURL with the actual URL
+  
+    // Wait for the first <p> tag to be present in the DOM
+    await page.waitForSelector('#id-missionText p:nth-child(1)');
+  
+    // Get the text content of the first <p> tag
+    const firstParagraphText = await page.$eval('#id-missionText p:nth-child(1)', (paragraph) => paragraph.textContent);
+  
+    // Assert that the first <p> tag exists
+    expect(firstParagraphText).toBeTruthy();
+  
+    // Replace 'Who are we' with the actual text content you expect for the first <p> tag
+    const expectedFirstParagraphContent = 'Our Mission';
+  
+    // Assert that the actual content of the first <p> tag matches the expected content
+    expect(firstParagraphText).toBe(expectedFirstParagraphContent);
+  });
+  
   
 
   
