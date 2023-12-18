@@ -159,4 +159,23 @@ test('Check hero text content', async ({ page }) => {
     expect(imageElement).toBeTruthy();
   });
   
+  test('Check presence of the chefs special heading and its content', async ({ page }) => {
+    // Navigate to the page where the heading is present
+    await page.goto(websiteURL); // Replace websiteURL with the actual URL
+  
+    // Wait for the heading element with the specified ID to be present in the DOM
+    await page.waitForSelector('#id-menu-heading');
+  
+    // Get the text content of the heading element with the specified ID
+    const headingText = await page.$eval('#id-menu-heading', (heading) => heading.textContent);
+  
+    // Assert that the heading element with the specified ID exists
+    expect(headingText).toBeTruthy();
+  
+    // Replace 'Expected Heading Content' with the actual text content you expect
+    const expectedHeadingContent = "Chef's Special";
+  
+    // Assert that the actual heading content matches the expected content
+    expect(headingText).toBe(expectedHeadingContent);
+  });
   
