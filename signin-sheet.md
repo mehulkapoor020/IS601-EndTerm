@@ -54,9 +54,11 @@
  <tr>
     <td>Dec 12, 2023</td>
     <td>X</td>
+    <td>X</td>
  </tr>
  <tr>
     <td>Dec 14, 2023</td>
+    <td>X</td>
     <td>X</td>
  </tr>
 </table>
