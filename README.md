@@ -26,7 +26,11 @@
 
 
 
-## User Stories/Sales funnel [Click Here](User-Stories.md)
+## Sales funnel [Click Here](Sales-Funnel.md)
+
+
+
+## User Stories [Click Here](User-Stories.md)
 
 
 
