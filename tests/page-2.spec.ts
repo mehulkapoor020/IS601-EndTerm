@@ -91,7 +91,7 @@ test('Check presence of the image in About us section', async ({ page }) => {
     expect(secondParagraphText).toBeTruthy();
   
     // Replace the expected content with the actual text content you expect for the second <p> tag
-    const expectedSecondParagraphContent = 'Our goal is to address hunger through a buy-1-give-1 model. For every item purchased, we commit to donating a corresponding item to the local food bank, contributing to the fight against hunger.';
+    const expectedSecondParagraphContent = 'Our goal is to address hunger through a Buy-1-Give-1 model. For every item purchased, we commit to donating a corresponding item to the local food bank, contributing to the fight against hunger.';
   
     // Assert that the actual content of the second <p> tag matches the expected content
     expect(secondParagraphText).toBe(expectedSecondParagraphContent);

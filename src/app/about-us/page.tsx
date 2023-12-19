@@ -4,6 +4,7 @@ import NavBar from '../../../components/common-components/nav-bar'
 import AboutUsSection from "../../../components/about-us/about-us";
 import Layout from "../../../components/common-components/layout";
 import Buy1Get1Section from "../../../components/about-us/buy-1-donate-1";
+import Footer from "../../../components/common-components/footer";
 
 export default async function AboutUs() {
   return (
@@ -11,6 +12,7 @@ export default async function AboutUs() {
       <NavBar />
       <AboutUsSection />
       <Buy1Get1Section />
+      <Footer />
     </Layout>
   )
 }
