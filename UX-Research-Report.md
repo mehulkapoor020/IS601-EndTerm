@@ -107,3 +107,15 @@
 ![Signup and confirmation page](UX-Screenshots/Signup-confirmation-page.png)
 
 ## Lighthouse Testing:
+
+### Summary:
+- Perform Lighthouse testing to check the lighthouse score of the index page and additional page.
+
+### Acceptance criteria:
+1.Check the Performance score on the lihghthouse chrome in developer tools, Accessibility, Best Practice, SEO
+2.Check Accessibility score on the lihghthouse chrome in developer tools
+3.Check Best Practice score on the lihghthouse chrome in developer tools
+4.Check SEO score on the lihghthouse chrome in developer tools. 
+5.All should be above Score 90.
+
+![lighthouse test](UX-Screenshots/lighthouse-test.png)
