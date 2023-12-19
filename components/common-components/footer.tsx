@@ -1,6 +1,6 @@
 "use client"
-import React, { useState } from "react";
-import { Navbar, NavbarBrand, NavbarMenuToggle, NavbarMenuItem, NavbarMenu, NavbarContent, NavbarItem, Link, Button } from "@nextui-org/react";
+import React from "react";
+import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link } from "@nextui-org/react";
 import Logo from "./logo";
 import Image from "next/image";
 
@@ -21,7 +21,7 @@ export default function Footer() {
         },
         {
             txt: "FOLLOW US",
-            url: 'https://www.instagram.com/lejardinduroichappaqua/?hl=en',
+            url: 'https://www.instagram.com/breadsbakery/?hl=en',
             icon: "/footer/insta.svg",
             showAnchor: true
         },

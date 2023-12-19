@@ -21,7 +21,7 @@ export default function MenuItem({ menu }: { menu: MenuProps }) {
       </CardBody>
       <CardFooter className="justify-between md:text-lg">
         <b>{menu.name}</b>
-        <p className="text-default-500">{menu.price}</p>
+        <p className="">{menu.price}</p>
       </CardFooter>
     </Card>
   );

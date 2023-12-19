@@ -17,7 +17,7 @@ export default function Buy1Get1Section() {
           Our Mission
         </p>
         <p className='text-left text-lg'>
-          Our goal is to address hunger through a buy-1-give-1 model. For every item purchased, we commit to donating a corresponding item to the local food bank, contributing to the fight against hunger.
+          Our goal is to address hunger through a <span className='font-bold text-xl'>Buy-1-Give-1</span> model. For every item purchased, we commit to donating a corresponding item to the local food bank, contributing to the fight against hunger. 
         </p>
       </div>
     </div>

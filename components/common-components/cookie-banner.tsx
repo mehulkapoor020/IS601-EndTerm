@@ -68,17 +68,17 @@ export default function CookieBanner({ heading, content }: CookieBannerProps) {
           onClick={() => { setCookieConsent(false); useAnalyticsEventTracker('privacy-policy', 'declined', 'declined') }}
           color='warning'
           size='lg'
-          className='text-xl font-bold'
+          className='text-xl'
         >
-          Decline
+          DECLINE
         </Button>
         <Button
           onClick={() => { setCookieConsent(true); useAnalyticsEventTracker('privacy-policy', 'accepted', 'accepted') }}
           color='warning'
           size='lg'
-          className='text-xl font-bold'
+          className='text-xl'
         >
-          Allow Cookies
+          ACCEPT
         </Button>
       </div>
     </div>

@@ -1,5 +1,5 @@
 ---
-image: '/landing_page/testimonials/p1.png'
+image: '/landing_page/testimonials/p2.png'
 rating: '5'
 ---
 
