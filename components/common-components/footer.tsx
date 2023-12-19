@@ -40,7 +40,7 @@ export default function Footer() {
         >
 
             <NavbarContent justify="start" className="pt-2 text-xl hidden lg:flex">
-                <NavbarBrand>
+                <NavbarBrand id="id-footer-logo">
                     <Logo showLogo={false} clsName="font-4xl"/>
                 </NavbarBrand>
             </NavbarContent>

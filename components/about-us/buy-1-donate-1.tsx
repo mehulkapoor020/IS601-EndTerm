@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Buy1Get1Section() {
   return (
-    <div className="flex flex-wrap w-full justify-center items-center gap-32 my-20">
+    <div id="id-mission" className="flex flex-wrap w-full justify-center items-center gap-32 my-20">
       <Image
         className='p-6 lg:p-0 object-cover'
         src="/about_us/get_1.png"
@@ -10,7 +10,7 @@ export default function Buy1Get1Section() {
         height={430}
         width={360}
       />
-      <div className='p-6 lg:p-0 w-96 flex flex-col gap-10'>
+      <div id="id-missionText" className='p-6 lg:p-0 w-96 flex flex-col gap-10'>
         <p
           className='text-center font-bold text-4xl'
         >
