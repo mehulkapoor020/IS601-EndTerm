@@ -22,7 +22,7 @@
 
 
 
-## Initial User Stories [Click Here](User-Stories.md)
+## User Stories/Sales funnel [Click Here](User-Stories.md)
 
 
 
